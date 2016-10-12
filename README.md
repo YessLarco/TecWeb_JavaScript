@@ -54,3 +54,13 @@ var mensaje="Hola Mundo";
 | Valor 2 C1      | Valor 2 C2     |   Valor 2 C3 |
 | Valor 3 C1 | Valor 3 C2      |    Valor 3 C3 |
 
+## Citas (no de humanos, sino de texto)
+Para escribir varias líneas de citas solamente las concatenamos en la siguiente línea utilizando mayor que ">"
+> Yo solo sé que nada sé
+
+>Sócrates
+
+Si no utilizamos una cita en una líneacon mayor que `>`:
+
+> Y si me matas, ¿Me muero?
+
