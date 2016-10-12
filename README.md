@@ -56,7 +56,7 @@ var mensaje="Hola Mundo";
 
 ## Citas (no de humanos, sino de texto)
 Para escribir varias líneas de citas solamente las concatenamos en la siguiente línea utilizando mayor que ">"
-> Yo solo sé que nada sé
+> Yo solo sé que nada sé. NO OLVIDARSE SALO DE LÍNEA.
 
 >Sócrates
 
@@ -64,3 +64,16 @@ Si no utilizamos una cita en una líneacon mayor que `>`:
 
 > Y si me matas, ¿Me muero?
 
+## SALTOS DE LÍNEA
+
+Para utilizar un salto de línea debemos utilizar más de 3 veces el carater `-`
+---
+0 el caracter `*`
+***
+0 el caracter 
+
+## Videos de youtube
+
+<a href="https://www.youtube.com/watch?v=U_s56FTgkuY
+" target="_blank"><img src="https://camo.githubusercontent.com/891e94cd8dda7f40f451bb27067be513c230318a/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f626f676a732f6a732e706e67" 
+alt="ALWAYS" width="240" height="180" border="10" /></a>
