@@ -30,7 +30,27 @@ y el link de la imagen en parentesis () ![Imagen de JS](https://camo.githubuserc
 Para nosotros utilizar el formateo de código dentro de texto plano se debe utilizar el caracter `Tilde invertida`
 Para utilizar el formateo de código en un bloque de código neesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programación a 
 usarse para el formateo del código, justo después de las 3 `Tildes invertidas`
+* JavaScript
 ```javascript
 var mensaje="Hola Mundo";
 ```
+* Bloque de código de una `consola`
+
+```
+> apt get update paquete
+> 
+```
+* Bloque de HTML
+
+```
+<html>
+<\html>
+```
+
+## Tablas
+| Columna 1        | Columna 2       | Columna 3  |
+| --- |:---:| ---:|
+| Valor 1 C1      | Valor 1 C2 | Valor 1 C3 |
+| Valor 2 C1      | Valor 2 C2     |   Valor 2 C3 |
+| Valor 3 C1 | Valor 3 C2      |    Valor 3 C3 |
 
