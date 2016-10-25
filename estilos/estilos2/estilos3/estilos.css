@@ -1,0 +1,52 @@
+ <style>
+        
+        /*        
+        //TAGS
+        nombreTag{ 
+            Propiedad1:valorPropiedad1;
+            Propiedad2:valorPropiedad2;
+            Propiedad3:valorPropiedad3;
+        }
+        
+        */
+        
+        html{
+            background-color: #aaff;
+        }
+        body{
+            background-color: #6df311;
+        }
+         h1{
+            background-color: #afcc;
+        }
+        
+        #cualquiera{
+            background-color: black;
+        }
+        h1{
+            background-color: yellow;
+        }
+        /*clases*/
+        .nombreClaseRojo{
+            background-color: aqua;
+        }
+        
+        .nombreClaseAmarillo{
+            background-color: azure;
+        }
+        
+        .nombreClaseAzul{
+            background-color: blue;
+        }
+        /*por ID*/
+        
+        #parrafoVerde{
+            background-color: deeppink;
+        }
+        
+        
+        
+/*        nombrePropuiedad:valorPropiedad; */
+    
+    
+    </style>
