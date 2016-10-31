@@ -11,7 +11,7 @@
 
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco">Marco Teorico</a>
-  * <a href="#metodos">HTTP Methods</a>
+  * <a href="#XML">XML</a>
   * <a href="#codigos">Codigos de estado HTTP</a>
   * <a href="#w3c">W3C</a>
   * <a href="#w3s">W3Schools</a>
@@ -41,3 +41,8 @@ ___
 ---
 
 ## Marco teórico 
+<a name="XML"></a>**Lenguaje de marcado XML:** siglas en inglés de *eXtensible Markup Language ("lenguaje de marcas Extensible")*, es un meta-lenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium (W3C) utilizado para almacenar datos en forma legible. XML fue diseñado para almacenar y transportar datos.
+
+<a name="WWW"></a>**WWW:** *World Wide Web (WWW)* o red informática mundial es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esos sitios usando hiperenlaces.
+
+<a name="W3C"></a>**W3C: **  *Consorcio WWW*, en inglés: *World Wide Web Consortium (W3C)*, es un consorcio internacional que genera recomendaciones y estándares que aseguran el crecimiento de la World Wide Web a largo plazo. Fue creado en octubre de 1994.
