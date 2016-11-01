@@ -6,7 +6,7 @@
     <title>Document</title>
     <script>
         // alert('Hola');
-        
+
         //Variables
         //        var texto="Texto";
         //        console.log(texto);
@@ -57,34 +57,83 @@
         //        console.log('Valor cuando es varUndefined');
         //        console.log(textoNumero);
 
-//Arreglos
-        var arregloString = ['1', '2', '3'];
-        console.log(arregloString);
+        //Arreglos
+        //        var arregloString = ['1', '2', '3'];
+        //        console.log(arregloString);
+        //
+        //        var arregloNumeros = [1, 2, 3];
+        //        console.log(arregloNumeros);
+        //
+        //        var arregloFloat = [1.2, 2.6, 3.56];
+        //        console.log(arregloFloat);
+        //
+        //        var arregloBoolean = [false, true, false];
+        //        console.log(arregloBoolean);
+        //
+        //        var arregloNull = [null, null, null];
+        //        console.log(arregloNull);
+        //
+        //        var arregloUndefined = [undefined, undefined, undefined];
+        //        console.log(arregloUndefined);
+        //
+        //        var arregloTodo = ['1', 2, 3.5, true, false, undefined, null, "Apellido"];
+        //        console.log(arregloTodo);
+        //        console.log(arregloTodo.length);
 
-        var arregloNumeros = [1, 2, 3];
-        console.log(arregloNumeros);
 
-        var arregloFloat = [1.2, 2.6, 3.56];
-        console.log(arregloFloat);
-
-        var arregloBoolean = [false, true, false];
-        console.log(arregloBoolean);
-
-        var arregloNull = [null, null, null];
-        console.log(arregloNull);
-
-        var arregloUndefined = [undefined, undefined, undefined];
-        console.log(arregloUndefined);
-
-        var arregloTodo = ['1', 2, 3.5, true, false, undefined, null, "Apellido"];
-        console.log(arregloTodo);
-        console.log(arregloTodo.length);
-        
-       
         //Objetos
+
+        var michelle = 'nombre Michelle';
+        var yesse = {
+            'nombre': 'Yessenia',
+            'apellido': 'Larco',
+            edad: 27,
+            mascotas: ['chiquita', 'loro'],
+            hermanos: [{
+                nombre: 'Pamela',
+                apellido: 'Larco'
+            }, {
+                nombre: 'Nataly',
+                apellido: 'Larco'
+            } 
+                      ],
+            
+            getNombre: function() {
+                return yesse.nombre;
+            },
+            
+            getApellido: function(){
+                return yesse.apellido;                
+            }, 
+            
+            setApellido: function(nuevoApellido)
+            {
+                this.apellido=nuevoApellido;
+            }
+        }
+
+
+        function getNombreYesse() {
+            return yesse.nombre;
+        }
         
+        console.log(yesse.getNombre());
+        console.log(yesse.getApellido());
+        yesse.setApellido='Andrade';
+        console.log(yesse.getApellido());
+
+       
         
     </script>
+
+    <!--
+    <yesse>
+        <nombre>Yessenia</nombre>
+        <apellido>Larco</apellido>
+        <edad>27</edad>
+    </yesse>
+-->
+
 </head>
 
 <body>
