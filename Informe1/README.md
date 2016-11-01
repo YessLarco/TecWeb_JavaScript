@@ -18,8 +18,6 @@
   * <a href="#codigos">Códigos de respuesta HTTP</a>
   * <a href="#her-insp">Herramienta Inspeccionar</a>
   * <a href="#postman">Postman</a>
-  * <a href="#npm">NPM</a>
-  * <a href="#xml">XML</a>
   * <a href="#tags">Tags HTML</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
@@ -35,9 +33,9 @@ ___
 ## Objetivos
 
 * Conocer los conceptos básicos en torno a una página web.
-* Aprender el uso de lenguaje HTML y las etiquetas de HTML.
-* Conocer el funcionamiento de los HTTP Methods y los codigos de HTTP.
 * Conocer qué es W3C y W3C Schools y para qué sirve.
+* Conocer el funcionamiento de los HTTP Methods y los codigos de HTTP.
+*  Aprender el uso de lenguaje HTML y las etiquetas de HTML.
 
 ---
 
@@ -52,11 +50,8 @@ ___
 
 **HTTP** se basa en sencillas operaciones de solicitud/respuesta. Un cliente establece una conexión con un servidor y envía un mensaje con los datos de la solicitud. El servidor responde con un mensaje similar, que contiene el estado de la operación y su posible resultado. Todas las operaciones pueden adjuntar un objeto o recurso sobre el que actúan; cada objeto Web (documento HTML, fichero multimedia o aplicación CGI) es conocido por su URL.
 
-<p align="center">
-<img src="\Graficos\http-protocolo-peticion.png">
-</p>
-
-        Figura 1. Ejemplo Petición HTTP
+![Petición HTTP](https://raw.githubusercontent.com/YessLarco/TecWeb_JavaScript/1_HTML/Informe1/Gr%C3%A1ficos/http-protocolo-peticion.png "HTTP")
+*Figura 1. Ejemplo Petición HTTP*
 
 <a name="MetodosHTTP"></a>**Métodos HTTP: ** permiten realizar diferentes tipos de peticiones *REQUEST/RESPONSE* a un servidor dependiendo de las necesidades de la aplicación. Los diferentes tipos de metodos son: 
 - ***GET:*** Solicita el recurso ubicado en la URL especificada.
@@ -83,3 +78,86 @@ Estos códigos pueden ser:
 <a name="postman"></a>**Postman:** herramienta que permite revisar la comunicacion entre las APIs.
 
 <a name="tags"></a>**Tags HTML:** son una marca con clase que delimita una región en los lenguajes basados en XML.
+
+---
+## Desarrollo de la Práctica
+
+En esta práctica se ve la estructura básica de una página web con HTML.
+
+Se procede ha hacer la declaración del documento HTML, el cual tiene la siguiente estructura:
+<p align="center">
+<img src="Graficos/http-protocolo-peticion.png">
+</p>
+*Figura 2. Declaración de un documento HTML*
+
+A continuación se hace uso de las etiquetas básicas de HTML.
+
+**1. HEAD (```<h></h>```):** 
+
+Este tag sirve para definir encabezados van desde el ```<h1>``` hasta el ```<h6>```, donde ```<h1>``` es el de mayor tamaño e importancia y ```<h6>``` es el más pequeño y menos importante.
+![Imagen Cabeceras](Graficos/cabeceras1 "Cabecera") ![](https://raw.githubusercontent.com/YessLarco/TecWeb_JavaScript/1_HTML/Informe1/Gr%C3%A1ficos/http-protocolo-peticion.png)
+
+*Figura 3. Uso de cabeceras*
+
+**2. LISTAS (```<ul>```)** 
+
+Una lista en codigo HTML se la declara haciendo uso del tag ```<ul>```, para listas no ordenadas, ```<ol>``` para listas ordenadas. Además se debe hacer uso del tag ```<li>``` dentro de los tags anteriores para listar cada uno de los elementos.
+![Imagen Cabeceras](https://raw.githubusercontent.com/YessLarco/TecWeb_JavaScript/1_HTML/Informe1/Gr%C3%A1ficos/http-protocolo-peticion.png "Cabecera") ![](https://raw.githubusercontent.com/YessLarco/TecWeb_JavaScript/1_HTML/Informe1/Gr%C3%A1ficos/http-protocolo-peticion.png)
+*Figura 4. Uso de listas ordenadas y desordenadas*
+
+**3. PÁRRAFOS (```<p>```)**
+
+El tag ```<p>``` se usa redactar todo el contenido necesario como un párrafo.
+![Imagen Cabeceras](https://raw.githubusercontent.com/YessLarco/TecWeb_JavaScript/1_HTML/Informe1/Gr%C3%A1ficos/http-protocolo-peticion.png "Cabecera") ![](https://raw.githubusercontent.com/YessLarco/TecWeb_JavaScript/1_HTML/Informe1/Gr%C3%A1ficos/http-protocolo-peticion.png)
+*Figura 5. Ejemplo de creacion de parrafos*
+
+**4. IMÁGENES (<img src="">)**
+
+Para referenciar una imagen se utiliza el tag  ```<img src="" alt="">``` en donde ```scr``` hace referencia a la direccion de ubicacion de la imagen y ```alt``` es un texto auxiliar el cual sirve para describir el contenido de la imagen o se pueden enviar mensajes de error en caso de que no haya sido posible encintrarla.
+<p align="center">
+<img src="https://raw.githubusercontent.com/mauseb20/Tec_Web_MC/Clase1-HTML/Informe%201/Imagenes/Imagen.png">
+</p>
+*Figura 6. Ejemplo de insercion de imagenes*
+
+**5. LINKS ** 
+
+Se hace uso del tag  ```<a href="" target="">```. En donde ```href``` hace referencia a la pagina a la cual se quiere acceder y ```target``` determina el destino de apertura, es decir, una nueva pestaña, una nueva ventana, en la misma ventana, etc.
+<p align="center">
+<img src="https://raw.githubusercontent.com/mauseb20/Tec_Web_MC/Clase1-HTML/Informe%201/Imagenes/Links.png">
+</p>
+*Figura 7. Ejemplo de creacion de links*
+
+**6. CLASES**
+
+Dentro de los tags se pueden definir clases que determinan el comportamiento que tendrá el elemento contenido por el tag. Como por ejemplo el estilo que este tendra. para poder hacer uso de dichas clases se debe dentro del tag definir la clase a utilizar y el valor de dicha clase, ejemplo:
+```
+<h2 style="background-color:pink">Listas desordenadas</h2>
+    
+```
+<p align="center">
+<img src="https://raw.githubusercontent.com/mauseb20/Tec_Web_MC/Clase1-HTML/Informe%201/Imagenes/Clases.png">
+</p>
+*Figura 8. Ejemplo de uso de la clase ```style```*
+
+<a href="#indice">Volver al Indice</a>
+***
+<a name="conrec"></a>
+
+## Conclusiones y Recomendaciones
+
+- La WWW es un recurso muy poderoso, ya que nos permite compartir mucha información hacia el mundo. Esta información puede ser texto, imágenes, videos, etc.
+- Existen organizaciones que regulan y presentan información acerca de Intenet, uno de ellos es W3C.
+- HTTP es el protocolo usado en la red para obtener recursos compartidos y de igual forma para compartirlos.
+- HTTP contiene métodos que son útiles para decir a un servidor que es lo que se desea. Pero no siempre las respuestas que se reciben del servidor son las mismas, es por eso que HTTP hace uso de códigos de estado que son los que informan al usuario que es lo que pasó en caso de fallo en la petición de un recurso.
+- HTML es un lenguaje de marcado que se usa para dar forma a las páginas web que se encuentra alojadas en un servidor y las cuáles se puede acceder por medio de un browser.
+  
+  
+  - Para estructurar una página web, es necesario el uso de un editor de texto, como por ejemplo Brackets
+  - Existen herramientas que facilitan el uso de HTML, una de ellas es EMMET que se la puede añadir a Brackets, con la cual no se nos olvidaran cerrar los tags en una estrutura HTML.
+  
+  <a href="#indice">Volver al Indice</a>
+***
+
+##Gracias por la atención
+
+#####Autor: Yessenia Larco
