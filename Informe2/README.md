@@ -45,7 +45,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 * Para el desarrollo de esta práctica, hay que empezar recordando la estructura básica de una página web con HTML. Se crea un archivo con esta extensión. Posteriormente se procede primero a instalar el servidor web para poder mostrar nuestros archivos, esto se lo realiza con el comando *npm install -g http-server* (-g es para instalarlo globalmente y no solo en la dirección especificada)
 
 <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/instalacionServidor.png?raw=true">
 </p>
 <p align="center">
 *Figura 1. Instalación del servidor web*
@@ -54,7 +54,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 * Como segundo paso se procede a levantar el servidor web en la carpeta donde se encuentran nuestros archivos, haciendo uso del comando *http-server -c10* (-c10 nos permite especificar que se borre la caché cada 10 milisegundos)
 
 <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/iniciaci%C3%B3nServidor.png?raw=true">
 </p>
 <p align="center">
 *Figura 2. Iniciación del servidor web*
@@ -65,7 +65,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 * Se pone una estructura básica de una página HTML, con su etiquetado. Dentro del tag ```<head>``` se puede utilizar el tag ```<style>``` para dar formato a la página web, esto se lo puede hacer poniendo un nombre cualquiera a un TAG que modifiquen las diferentes propiedades de los tags de HTML, como se muestra en la figura 3. 
 
 <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/ejemploTag.png?raw=true">
 </p>
 <p align="center">
 *Figura 3. Ejemplo de declaración de TAG*
@@ -74,7 +74,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 * Estos tags pueden ser cualquiera de los que tiene el lenguaje HTML, como por ejemplo el color de fondo (background-color) de toda la página (```<html>```), sólo de un título (```<h1>```) o de un párrafo completo (```<p>```). El siguiente imagen se puede ver como se definen los tags y dentro el valor de la propiedad que se desea cambiar.
 
 <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/estilos2.png?raw=true" width="400" height="350">
 </p>
 <p align="center">
 *Figura 4. Ejemplo de TAG con asignación de valor a la propiedad*
@@ -82,7 +82,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 
 * Si esto lo ejecutamos en el browser, se puede ver como cada uno de los tags tienen diferentes colores de fondo, así como lo definimos.
 <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/estilos1.png?raw=true" width="450" height="200">
 </p>
 <p align="center">
 *Figura 5. Visualización del estilo*
@@ -90,7 +90,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 
 * Otra forma en la que se puede poner estilos a una hoja es declarando clases, en la cual se pone su nombre y de igual forma se puede dar valores a propiedades. En la figura 6 se muestra un ejemplo de como se las declara. Estas se las puede llamar por su nombre o por ID.
 <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/clases1.png?raw=true">
 </p>
 <p align="center">
 *Figura 6. Declaración de clases*
@@ -99,14 +99,14 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 * Para poder hacer uso de estas clases, dentro del tag HTML se hace referencia a ellas utilizando sus propiedades de la siguiente manera:
  1. Si se hace el llamado de una propiedad por medio de su nombre, dentro del tag se hace uso de la propiedad *class=""*.
  <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/clases2.png?raw=true">
 </p>
 <p align="center">
 *Figura 7. Llamado de clase por su nombre*
 </p>
  2. En cambio si se desea hacerlo por medio del ID, se hace uso de la propiedad *id=""*
  <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/clases3.png?raw=true">
 </p>
 <p align="center">
 *Figura 8. Llamado de clase por su ID*
@@ -114,7 +114,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
  
  Sea como se haga el llamado de las clases, estas funcionan igual, a continuación se muestra el resultado del cambio de estilo. (Figura 9)
  <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/clases4.png?raw=true">
 </p>
 <p align="center">
 *Figura 9. Cambio de estilo de TAGs*
@@ -122,7 +122,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
  
 * Haciendo uso de CSS, se tiene una ventaja y es que se puede hacer una hoja con extensión .css, en donde se declaren todos los tags y clases de estilos. Para esto se necesita hacer una referencia al archivo mediante el tag ```<link>``` en donde las clases ```rel=""``` permiten definir que se trata de una hoja de estilos y ```href=""``` es el path de donde se encuentra la hoja a la que se quiere acceder.
  <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/link.png?raw=true">
 </p>
 <p align="center">
 *Figura 10. Referenciación a una hoja de estilos externa*
@@ -132,7 +132,8 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 * No se puede acceder a una carpeta que esté superior a la que se inició el servidor web, solo se puede a las que están por debajo (Jerarquía).
 * Otra ventaja que se tiene con CSS es que se pueden definir etiquetas con cualquier nombre, por ejemplo ```<cualquiera>``` y luego en la hoja de estilos se pueden cambiar sus propiedades.
   <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/cualquiera1.png?raw=true">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/cualquiera2.png?raw=true">
 </p>
 <p align="center">
 *Figura 11. Definición de una etiqueta*
@@ -140,7 +141,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 
 * También se tienen ya hojas de estilos predefinidas para cada etiqueta, estas se las encuentra en BootStrap. Para hacer uso de estas hojas ya predefinidas se necesita hacer referencia al link de la página en la que se encuentra, esta referencia es similar a hacer a una hoja de estilos normal.
   <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/boot2.png?raw=true">
 </p>
 <p align="center">
 *Figura 12. Referencia a una hoja de BootStrap*
@@ -148,7 +149,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
  
  * Estas hojas tienen definidos sus propios estilos para cada tag, inlcuso para el tamaño y estilo de letra, como se muestra en la siguiente figura, donde se muestra la página en el browser.
    <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/boot1.png?raw=true">
 </p>
 <p align="center">
 *Figura 13. Visualización de estilos de BootStrap*
@@ -156,9 +157,12 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 
 * Dentro de la etiqueta ```<div>``` se pueden definir diferentes clases para poder armar una tabla. Se tienen la clase ```container``` que es la que va a contener a las otras clases, en si se puede decir que es la tabla. Luego se tiene la clases ```row``` la cual define las filas de la tabla y la clase ```column``` la cual define las columnas.
 * La clase *container* puede tener varios *row* y a su vez la clase *row* puede tener varias clases *column*.
-* A la clase *column* se le pueden definir diferentes tamaños, dependiendo del que sea a cierto numero de pixeles las columnas se irán haciendo pequeñas y poniéndose hacia abajo. En la figura a continuaci'on se explica esto.
+* A la clase *column* se le pueden definir diferentes tamaños, dependiendo del que sea a cierto numero de pixeles las columnas se irán haciendo pequeñas y poniéndose hacia abajo. En la figura a continuación se explica esto.
    <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/container1.png?raw=true" width="350" height="150">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/container2.png?raw=true" width="350" height="150">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/container3.png?raw=true" width="350" height="150">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/container4.png?raw=true" width="350" height="150">
 </p>
 <p align="center">
 *Figura 14. Definicion de container*
@@ -166,7 +170,7 @@ CSS ahorra mucho trabajo. Este puede controlar el despliqgue de múltiples pági
 
 * Si se tiene a la tabla en un tamaño grande se pueden visualizar todas las columnas definidas, pero mientras se la va haciendo pequeña se puede ir viendo como se van haciendo pequeñas.
    <p align="center">
-<img src="Graficos/http-protocolo-peticion.png">
+<img src="https://github.com/YessLarco/TecWeb_JavaScript/blob/2_CSS/Informe2/Graficos/visualizacionContainer.png?raw=true">
 </p>
 <p align="center">
 *Figura 15. Visualización la clase container*
