@@ -160,45 +160,79 @@
         //                numMonth++;
         //            }
 
-        for (var i = 1; i <= monthToPrint; i++) {
-            numSheep = numSheep * 4;
-            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
-            numMonth++;
-        }
-        
-        
-        console.log('Elimino la mitad de la población');
-        numSheep = 4;
-        numMonth = 1;
+        //        for (var i = 1; i <= monthToPrint; i++) {
+        //            numSheep = numSheep * 4;
+        //            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
+        //            numMonth++;
+        //        }
+        //        
+        //        
+        //        console.log('Elimino la mitad de la población');
+        //        numSheep = 4;
+        //        numMonth = 1;
+        //
+        //        for (var i = 1; i <= monthToPrint; i++) {
+        //            numSheep = numSheep * 4;
+        //            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
+        //            if (numSheep >= 10000) {
+        //                numSheep = numSheep / 2;
+        //                console.log('Se han removido ' + numSheep + ' a la otra región');
+        //            }
+        //            numMonth++;
+        //        }
+        //        
+        //        console.log('Elimino 75% población en el 4to mes');
+        //        numSheep = 4;
+        //        numMonth = 1;
+        //
+        //        for (var i = 1; i <= monthToPrint; i++) {
+        //            numSheep = numSheep * 4;
+        //            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
+        //            if(numMonth%4==0)
+        //                {
+        //                    var n=numSheep*0.75;
+        //                    numSheep=numSheep*0.25;
+        //                    console.log('El valor ' + n + ' se ha eliminado de la población');
+        //                } else if (numSheep >= 10000) {
+        //                numSheep = numSheep / 2;
+        //                console.log('Se han removido ' + numSheep + ' a la otra región');
+        //            }
+        //            numMonth++;
+        //        }
 
-        for (var i = 1; i <= monthToPrint; i++) {
-            numSheep = numSheep * 4;
-            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
-            if (numSheep >= 10000) {
-                numSheep = numSheep / 2;
-                console.log('Se han removido ' + numSheep + ' a la otra región');
+        //        var respuesta=prompt("Cual es tu edad, amigo");
+        //        console.log(parseInt(respuesta));
+
+        function multiplicar3(numero1, numero2, numero3) {
+            return numero1 * numero2 * numero3;
+        }
+
+        console.log(multiplicar3(6, 2, 9));
+
+        function numMayor(num1, num2) {
+            if (num1 >= num2) {
+                return num1;
+            } else {
+                return num2;
             }
-            numMonth++;
+        }
+
+        console.log(numMayor(15, 16));
+
+        function mystery(x, y) {
+            return ((4 * x * y) + (3 * y + 5))
+        }
+
+        console.log(mystery(4, 7));
+        
+        function feedPerRanger(sheeps, rangers){
+            var feedPerSheep=2;
+            return (sheeps*feedPerSheep)/rangers;
         }
         
-        console.log('Elimino 75% población en el 4to mes');
-        numSheep = 4;
-        numMonth = 1;
-
-        for (var i = 1; i <= monthToPrint; i++) {
-            numSheep = numSheep * 4;
-            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
-            if(numMonth%4==0)
-                {
-                    var n=numSheep*0.75;
-                    numSheep=numSheep*0.25;
-                    console.log('El valor ' + n + ' se ha eliminado de la población');
-                } else if (numSheep >= 10000) {
-                numSheep = numSheep / 2;
-                console.log('Se han removido ' + numSheep + ' a la otra región');
-            }
-            numMonth++;
-        }
+        
+        console.log('La cantidad de comida que necesita cada ranger es: '+feedPerRanger(8,4)+' lbs.');
+        
     </script>
 
     <!--
