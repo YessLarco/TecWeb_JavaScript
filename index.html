@@ -136,13 +136,11 @@
 //            count--;
 //        }
         
-        for(var i=10;i>=0;i--)
+        for(var i=10;i>0;i--)
             {
                 if (i % 2 == 0) {
                 console.log('El numero es par: ' + i);
-            } else {
-                console.log('El numero ' + i + 'es impar ');
-            }
+            } 
             arregloNumero.push(i);
             }
 
@@ -168,6 +166,22 @@
             console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
             numMonth++;
         }
+        
+        numSheep=4;
+        numMonth=1;
+        
+        for (var i = 1; i <= monthToPrint; i++) {
+            numSheep = numSheep * 4;
+            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
+            if (numSheep>=10000)
+                {
+                    numSheep=numSheep/2;
+                    console.log('Se han removido '+numSheep+' a la otra región');
+                }
+            numMonth++;
+        }
+        
+        
     </script>
 
     <!--
