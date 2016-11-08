@@ -125,15 +125,26 @@
         console.log('Empieza');
         var count = 10;
         var arregloNumero = [];
-        while (count > 0) {
-            if (count % 2 == 0) {
-                console.log('El numero es par: ' + count);
+
+//        while (count > 0) {
+//            if (count % 2 == 0) {
+//                console.log('El numero es par: ' + count);
+//            } else {
+//                console.log('El numero ' + count + 'es impar ');
+//            }
+//            arregloNumero.push(count);
+//            count--;
+//        }
+        
+        for(var i=10;i>=0;i--)
+            {
+                if (i % 2 == 0) {
+                console.log('El numero es par: ' + i);
             } else {
-                console.log('El numero ' + count + 'es impar ');
+                console.log('El numero ' + i + 'es impar ');
             }
-            arregloNumero.push(count);
-            count--;
-        }
+            arregloNumero.push(i);
+            }
 
         arregloNumero.pop();
         arregloNumero.splice(9, 2, 11);
@@ -144,13 +155,19 @@
         var numSheep = 4;
         var numMonth = 1;
         var monthToPrint = 12;
-        
-        while(numMonth<monthToPrint)
-            {
-                numSheep=numSheep*4;
-                console.log('Tendremos '+numSheep+' ovejas después de '+numMonth);
-                numMonth++;
-            }
+
+        //        while(numMonth<monthToPrint)
+        //            {
+        //                numSheep=numSheep*4;
+        //                console.log('Tendremos '+numSheep+' ovejas después de '+numMonth);
+        //                numMonth++;
+        //            }
+
+        for (var i = 1; i <= monthToPrint; i++) {
+            numSheep = numSheep * 4;
+            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
+            numMonth++;
+        }
     </script>
 
     <!--
