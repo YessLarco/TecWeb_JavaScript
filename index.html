@@ -124,14 +124,22 @@
         
         console.log('Empieza');
         var count=10;
-        
+        var arregloNumero=[];
         while(count>0){
-            
-            console.log(count);
+            if(count%2==0){
+                console.log('El numero es par: '+count);
+            } else{
+                console.log('El numero '+ count+'es impar ');
+            }
+            arregloNumero.push(count);
             count--;
-            
         }
+        
+        arregloNumero.pop();
+        arregloNumero.splice(9,2,11);
         console.log('Se acaba');
+        
+        console.log(arregloNumero);
 
        
         
