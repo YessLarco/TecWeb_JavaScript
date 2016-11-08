@@ -233,6 +233,27 @@
         
         console.log('La cantidad de comida que necesita cada ranger es: '+feedPerRanger(8,4)+' lbs.');
         
+        var movie1=[16,"candles"];
+        var movie2=[3,"Men","and","a","Baby"];
+        var eightiesMovies=[movie1,movie2];
+        
+        var infant=eightiesMovies[1][4];
+        console.log(infant);
+        
+        function numeroStrings(arreglo){
+            var numStrings=0;
+            for(var i=0;i<arreglo.length;i++)
+                {
+                    if(typeof arreglo[i]=='string'){
+                        numStrings++;
+                    }
+                }
+            return numStrings;
+        }
+        
+        var arreglo=[1,'2',3,'4',5,'seis'];
+        console.log(numeroStrings(arreglo));
+        
     </script>
 
     <!--
