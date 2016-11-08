@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="backgroud-color: black">
 
-<head>
+<head style="backgroud-color: black">
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
@@ -126,23 +126,22 @@
         var count = 10;
         var arregloNumero = [];
 
-//        while (count > 0) {
-//            if (count % 2 == 0) {
-//                console.log('El numero es par: ' + count);
-//            } else {
-//                console.log('El numero ' + count + 'es impar ');
-//            }
-//            arregloNumero.push(count);
-//            count--;
-//        }
-        
-        for(var i=10;i>0;i--)
-            {
-                if (i % 2 == 0) {
+        //        while (count > 0) {
+        //            if (count % 2 == 0) {
+        //                console.log('El numero es par: ' + count);
+        //            } else {
+        //                console.log('El numero ' + count + 'es impar ');
+        //            }
+        //            arregloNumero.push(count);
+        //            count--;
+        //        }
+
+        for (var i = 10; i > 0; i--) {
+            if (i % 2 == 0) {
                 console.log('El numero es par: ' + i);
-            } 
-            arregloNumero.push(i);
             }
+            arregloNumero.push(i);
+        }
 
         arregloNumero.pop();
         arregloNumero.splice(9, 2, 11);
@@ -167,21 +166,39 @@
             numMonth++;
         }
         
-        numSheep=4;
-        numMonth=1;
         
+        console.log('Elimino la mitad de la población');
+        numSheep = 4;
+        numMonth = 1;
+
         for (var i = 1; i <= monthToPrint; i++) {
             numSheep = numSheep * 4;
             console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
-            if (numSheep>=10000)
-                {
-                    numSheep=numSheep/2;
-                    console.log('Se han removido '+numSheep+' a la otra región');
-                }
+            if (numSheep >= 10000) {
+                numSheep = numSheep / 2;
+                console.log('Se han removido ' + numSheep + ' a la otra región');
+            }
             numMonth++;
         }
         
-        
+        console.log('Elimino 75% población en el 4to mes');
+        numSheep = 4;
+        numMonth = 1;
+
+        for (var i = 1; i <= monthToPrint; i++) {
+            numSheep = numSheep * 4;
+            console.log('Tendremos ' + numSheep + ' ovejas después de ' + numMonth);
+            if(numMonth%4==0)
+                {
+                    var n=numSheep*0.75;
+                    numSheep=numSheep*0.25;
+                    console.log('El valor ' + n + ' se ha eliminado de la población');
+                } else if (numSheep >= 10000) {
+                numSheep = numSheep / 2;
+                console.log('Se han removido ' + numSheep + ' a la otra región');
+            }
+            numMonth++;
+        }
     </script>
 
     <!--
@@ -194,7 +211,7 @@
 
 </head>
 
-<body>
+<body style="backgroud-color: black">
 
 </body>
 
