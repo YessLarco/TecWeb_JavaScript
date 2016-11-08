@@ -83,66 +83,74 @@
 
         //Objetos
 
-//        var michelle = 'nombre Michelle';
-//        var yesse = {
-//            'nombre': 'Yessenia',
-//            'apellido': 'Larco',
-//            edad: 27,
-//            mascotas: ['chiquita', 'loro'],
-//            hermanos: [{
-//                nombre: 'Pamela',
-//                apellido: 'Larco'
-//            }, {
-//                nombre: 'Nataly',
-//                apellido: 'Larco'
-//            } 
-//                      ],
-//            
-//            getNombre: function() {
-//                return yesse.nombre;
-//            },
-//            
-//            getApellido: function(){
-//                return yesse.apellido;                
-//            }, 
-//            
-//            setApellido: function(nuevoApellido)
-//            {
-//                this.apellido=nuevoApellido;
-//            }
-//        }
-//
-//
-//        function getNombreYesse() {
-//            return yesse.nombre;
-//        }
-//        
-//        console.log(yesse.getNombre());
-//        console.log(yesse.getApellido());
-//        yesse.setApellido='Andrade';
-//        console.log(yesse.getApellido());
-        
+        //        var michelle = 'nombre Michelle';
+        //        var yesse = {
+        //            'nombre': 'Yessenia',
+        //            'apellido': 'Larco',
+        //            edad: 27,
+        //            mascotas: ['chiquita', 'loro'],
+        //            hermanos: [{
+        //                nombre: 'Pamela',
+        //                apellido: 'Larco'
+        //            }, {
+        //                nombre: 'Nataly',
+        //                apellido: 'Larco'
+        //            } 
+        //                      ],
+        //            
+        //            getNombre: function() {
+        //                return yesse.nombre;
+        //            },
+        //            
+        //            getApellido: function(){
+        //                return yesse.apellido;                
+        //            }, 
+        //            
+        //            setApellido: function(nuevoApellido)
+        //            {
+        //                this.apellido=nuevoApellido;
+        //            }
+        //        }
+        //
+        //
+        //        function getNombreYesse() {
+        //            return yesse.nombre;
+        //        }
+        //        
+        //        console.log(yesse.getNombre());
+        //        console.log(yesse.getApellido());
+        //        yesse.setApellido='Andrade';
+        //        console.log(yesse.getApellido());
+
         console.log('Empieza');
-        var count=10;
-        var arregloNumero=[];
-        while(count>0){
-            if(count%2==0){
-                console.log('El numero es par: '+count);
-            } else{
-                console.log('El numero '+ count+'es impar ');
+        var count = 10;
+        var arregloNumero = [];
+        while (count > 0) {
+            if (count % 2 == 0) {
+                console.log('El numero es par: ' + count);
+            } else {
+                console.log('El numero ' + count + 'es impar ');
             }
             arregloNumero.push(count);
             count--;
         }
-        
+
         arregloNumero.pop();
-        arregloNumero.splice(9,2,11);
+        arregloNumero.splice(9, 2, 11);
         console.log('Se acaba');
-        
+
         console.log(arregloNumero);
 
-       
+        var numSheep = 4;
+        var numMonth = 1;
+        var monthToPrint = 12;
         
+        while(numMonth<monthToPrint)
+            {
+                numSheep=numSheep*4;
+                console.log('Tendremos '+numSheep+' ovejas después de '+numMonth);
+                numMonth++;
+            }
     </script>
 
     <!--
