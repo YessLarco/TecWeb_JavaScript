@@ -1,4 +1,6 @@
 var express = require('express')
+var fs = require('fs')
+
 var app = express()
 var puerto = 5050
 
@@ -23,6 +25,20 @@ var usuarios = [
 ]
 
 var contador=3;
+
+//function(path, codificacion, funcion){
+//    
+//}
+fs.readFile('./paginas/pagina.html','utf8', function(error,archivoLeido){
+    console.log(error);
+    console.log(archivoLeido);
+});
+
+//pagina/pagina.html
+//>C:/paginas/pagina.html
+
+//.pagina/pagina.html
+//>path/paginas/pagina.html
 
 app.get('/TecnologiasWeb', function (req, res) {
     res.send('Hello World!')
