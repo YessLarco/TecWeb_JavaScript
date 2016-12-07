@@ -29,10 +29,15 @@ var contador=3;
 //function(path, codificacion, funcion){
 //    
 //}
-fs.readFile('./paginas/pagina.html','utf8', function(error,archivoLeido){
-    console.log(error);
-    console.log(archivoLeido);
-});
+
+var quePasa='';
+quePasa='esta por leer el archivo';
+console.log(quePasa);
+
+
+
+quePasa='termino de leer el archivo';
+console.log(quePasa);
 
 //pagina/pagina.html
 //>C:/paginas/pagina.html
@@ -58,6 +63,32 @@ app.get('/Usuario/:id',function(req, res){
     //responde que no existe el usuario luego de busar en el arreglo
     res.send('No existe el usuario!!!');
         })
+app.get('/',function(req, res){
+var mensaje = '';
+    
+    console.log('1. antes de leer');
+    
+    fs.readFile('./paginas/pagina.html','utf8', function(error,archivoLeido){
+        
+        mensaje+=archivoLeido;
+     
+        fs.readFile('./paginas/usuario.html','utf8', function(error,archivoLeido1){
+            
+            mensaje+=archivoLeido1;
+            
+             fs.readFile('./paginas/footer.html','utf8', function(error,archivoLeido2){
+                 
+                 mensaje+=archivoLeido2;
+                 res.send(mensaje);
+                 
+             });
+        });
+        
+     
+});
+    
+   console.log('2. termino de leer');
+})
 
 app.get('/Usuario',function(req, res){
      
