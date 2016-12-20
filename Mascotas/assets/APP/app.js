@@ -1,0 +1,1 @@
+alert('No es bueno utilizar alerts');

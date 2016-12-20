@@ -17,3 +17,22 @@ Sailsjs es un servidor web que permite el manejo de bases de dato en linea sin n
 ...
 >sail new NombreProyecto
 ...
+
+## Levantas el servidor
+
+´´´
+>sails lift
+´´´
+´´´
+>node app.js
+´´´
+
+el sails les pide opciones si no estann definidas, las opciones son:
+-1: SAFE MODE no se va a alterar la base de daros
+-2: ALTER MODE se va alteras la base de datos si nosotros hicimos cambios en los modelos por ejemplo
+-3: DELETE MODE borra todos los datos de la BDD y vuelve a crear los modelos
+
+## Servidor Web de sails
+el servidor web de sails se encuentra ubicado en la carpeta **assets**
+
+## Grunt (i dont know)
