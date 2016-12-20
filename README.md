@@ -36,3 +36,6 @@ el sails les pide opciones si no estann definidas, las opciones son:
 el servidor web de sails se encuentra ubicado en la carpeta **assets**
 
 ## Grunt (i dont know)
+
+## Views de la carpeta de mi proyecto
+- Los archivos ejs son templates de javascript para los errores del servidor
