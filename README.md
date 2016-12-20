@@ -39,3 +39,9 @@ el servidor web de sails se encuentra ubicado en la carpeta **assets**
 
 ## Views de la carpeta de mi proyecto
 - Los archivos ejs son templates de javascript para los errores del servidor
+
+## Generar controladores en Sailsjs
+Para generar controladores se utiliza el siguiente comando
+´´´
+>sails generate controller NombreControlador
+´´´
