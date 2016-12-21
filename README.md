@@ -56,3 +56,26 @@ Un api es la fusion de un **controlador**  y de un **modelo**
 
 >sails generate model NombreModelo
 
+## Instala el nodemailer
+>npm install -g nodemailer
+
+## API rest
+
+### Crear usuarios
+
+URL:
+´http://localhost:1337/´
+
+Metodo HTTP:
+´POST´
+
+Datos:
+´´´javascript
+//json
+
+{
+    nombre:'Yessenia',
+    apellido:'Larco',
+    correo:'yesslarco@hotmail.com'
+}
+´´´
