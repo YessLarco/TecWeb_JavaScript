@@ -45,3 +45,14 @@ Para generar controladores se utiliza el siguiente comando
 ´´´
 >sails generate controller NombreControlador
 ´´´
+
+## Generador de APIs
+
+>sails generate api NombreApi
+
+Un api es la fusion de un **controlador**  y de un **modelo**
+
+## Generador de modelo
+
+>sails generate model NombreModelo
+
