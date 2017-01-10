@@ -45,6 +45,8 @@ module.exports.blueprints = {
   ***************************************************************************/
 
   // actions: true,
+    
+  //  http://localhost:1337/Usuario/create?nombres:Carolina&apellidos=Larco Andrade
 
   /***************************************************************************
   *                                                                          *
@@ -157,6 +159,6 @@ module.exports.blueprints = {
   *                                                                           *
   ****************************************************************************/
 
-  // defaultLimit: 30
+   defaultLimit: 10
 
 };

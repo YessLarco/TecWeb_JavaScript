@@ -11,12 +11,12 @@ module.exports = {
       
       nombres:{
           type:'string',
-          minlength:5
+          minLength:5
       },
       
       apellidos:{
           type:'string',
-          minlength:5
+          minLength:5
       },
       
       correo:{
