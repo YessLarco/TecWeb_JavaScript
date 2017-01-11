@@ -1,0 +1,18 @@
+<div style="background-color:white ; color: black">
+
+
+<% var numero1= 1; %>
+
+<% var arregloMascotas=[{nombre:'Chiquita'},{nombre:'Scrappy'},{nombre:'Penny'}]; %>
+
+<h1>Home</h1>
+<h2><%=   titulo  %></h2>
+<h2><%=   mauricio.nombre %> - <%=   mauricio.cedula %> - <%=   numero1 %></h2>
+
+<% for (var i=0; i<arregloMascotas.length;i++){ %>
+
+<h3><%= arregloMascotas[i].nombre%></h3>
+
+<%}%>
+
+</div>
