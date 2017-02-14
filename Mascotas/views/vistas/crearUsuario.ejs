@@ -1,23 +1,21 @@
-<div style="background-color:white ; color: black">
+<h2>Crea un usuario</h2>
+<form action="/Usuarios/CrearUsuario" method="post">
 
+    <div class="form-group">
+        <label>Nombres</label>
+        <input type="text" class="form-control" placeholder="Ingrese sus Nombres" name="nombres">
+    </div>
 
-<h1>Crear Usuario</h1>
+    <div class="form-group">
+        <label>Apellidos</label>
+        <input type="text" class="form-control" placeholder="Ingrese sus Apellidos"  name="apellidos">
+    </div>
 
-<form action="Usuario/CrearUsuarioForm" method="post">
-    <br>
-    <label for="">Nombres</label>
-    <input type="text" name="nombres">
-    
-    <br>
-    <label for="">Apellidos</label>
-    <input type="text" name="apellidos">
-    
-    <br>
-    <label for="">Correo</label>
-    <input type="text" name="correo">
-    
-    <br>
-    <button type="submit">Crear Usuario</button>
+    <div class="form-group">
+        <label>Correo</label>
+        <input type="email" class="form-control" placeholder="Ingrese su correo"  name="correo">
+    </div>
+
+    <button type="submit" class="btn btn-success">Crear Usuario :)</button>
 </form>
 
-</div>
