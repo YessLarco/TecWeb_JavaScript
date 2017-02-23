@@ -2,7 +2,7 @@
   {{title}}
 </h1>
 <div class="container">
-  <form (ngSubmit)="crearTienda(NuevoTiendaForm)" #NuevoTiendaForm="ngForm">
+  <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
     <div class="form-group">
       <label>Tienda</label>
       <input type="text" class="form-control" placeholder="Digite un nombre de tienda como: Pepito" name="nombre" [(ngModel)]="nuevaTienda.nombre">
