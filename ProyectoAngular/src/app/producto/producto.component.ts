@@ -12,6 +12,7 @@ export class ProductoComponent implements OnInit {
 
   private _parametros:any;
   productos=[];
+  nuevoproducto={};
 
   constructor(private _ActivatedRoute: ActivatedRoute,
   private _http: Http,
@@ -33,4 +34,19 @@ export class ProductoComponent implements OnInit {
     })
   }
 
+  crearProducto(nombre:string){
+    let producto={
+      nombre:nombre,
+      idtienda:this._parametros.idTienda
+    };
+    this._http.post(this._masterUrl.url+'Producto',producto)
+      .subscribe(
+        (res:Response)=>{
+          this.productos.push(res.json());
+          this.nuevoproducto={};
+        },
+        (err)=> {
+          console.log(err)
+        })
+  }
 }

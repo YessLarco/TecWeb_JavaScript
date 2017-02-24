@@ -1,3 +1,14 @@
-<p>
-  producto works!
-</p>
+<h1>Productos</h1>
+<div class="container">
+  <div class="form-group">
+    <label >Nombre del Producto:</label>
+    <input
+    type="text"
+    class="form-group"
+    name="nombre"
+    [(ngModel)]="nuevoProducto.nombre">
+  </div>
+    <button (click)="crearProducto(nombre)">CrearProducto</button>
+  <div class="row"></div>
+</div>
+<div class="container"></div>
