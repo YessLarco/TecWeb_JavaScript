@@ -1,0 +1,16 @@
+import {Routes, RouterModule} from "@angular/router";
+import {HomeComponent} from './home/home.component'
+import {ModuleWithProviders} from "@angular/core";
+import {TiendaComponent} from "./tienda/tienda.component";
+import {ProductoComponent} from "./producto/producto.component";
+/**
+ * Created by Yess on 2/24/2017.
+ */
+export const routes: Routes = [
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'tienda', component: TiendaComponent},
+  {path: 'tienda/:idTienda/producto', component: ProductoComponent},
+];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
