@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {MasterURLService} from "./services/master-url.service";
 
 // DECORATOR
 // @Decorator({objeto con la definicion del decorador})
@@ -15,11 +16,15 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    //se definen las palicaciones que se van a usar
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    //se definen aqui los servicios que se van a usar
+    MasterURLService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

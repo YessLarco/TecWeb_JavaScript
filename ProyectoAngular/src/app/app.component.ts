@@ -1,4 +1,7 @@
 import {Component, OnInit} from "@angular/core";
+import {Http, Response} from "@angular/http";
+import {MasterURLService} from "./services/master-url.service";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -8,42 +11,88 @@ import {Component, OnInit} from "@angular/core";
 
 export class AppComponent implements OnInit {
 
-  title: string = "Hola amigos";
-  nombre: string = "";
-  apellido: string = "";
-  colorH4 = "red";
-  tamanioH4="51px";
+  title: string = "Bienvenido a ingresar Tiendas";
 
-  nuevaTienda:any={};
+  nuevaTienda: any = {};
+  tiendas = [];
+  disabledButtons = {
+    NuevaTiendaFormSubmitButton: false
+  };
 
-  constructor() {
-    this.apellido = "Larco";
-    this.nombre = "Yessenia";
+  constructor(private _http: Http,
+              private _masterUrl: MasterURLService) {
     console.log("Se inicio el contructor")
   }
 
   ngOnInit() {
-    //Aqui es donde se van a cargar los datos, para no utilizar funciones
-    this.apellido = "Andrade";
-    this.nombre = "Carolina";
+    //Aqui es donde se van a cargar los datos que ya se tienen guardado, para no utilizar funciones
+    this._http.get(this._masterUrl.url + "Tienda")
+      .subscribe(
+        (res: Response) => {
+          console.log(res.json());
+          this.tiendas = res.json()
+            .map((value)=>{
+            value.formularioCerrado = true;
+            return value;
+            });
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
     console.log("On Init")
   }
 
-  nombreCompleto(): string {
-    return `${this.nombre} ${this.apellido}`;
-  }
+  crearTienda(formulario: NgForm) {
 
-  hizoClick() {
-    console.log("Hizo click");
-    console.log()
-  }
-
-  hizoFocus(){
-    console.log("Hizo focus");
-  }
-
-  crearTienda(formulario){
+    console.log("Estoy en la funcion crear");
     console.log(formulario);
+    this._http.post(this._masterUrl.url + "Tienda", {
+      nombre: formulario.value.nombre
+    })
+      .subscribe((res) => {
+          console.log("No hubo errores");
+          console.log(res);
+          this.tiendas.push(res.json());
+          this.nuevaTienda = {};
+          this.disabledButtons.NuevaTiendaFormSubmitButton = false;
+        },
+        (err) => {
+          console.log("Ocurrió un error ", err);
+        },
+        () => {
+          console.log("Termino la funcion vamos a la casa");
+        }
+      );
+
   }
 
+  borrarTienda(id:number){
+    this._http.delete(this._masterUrl.url+"Tienda/"+id)
+      .subscribe(
+        (res)=>{
+          let tiendaBorrada = res.json();
+          this.tiendas=this.tiendas.filter(value=>tiendaBorrada.id!=value.id);
+        },
+        (err)=>{
+          console.log(err);
+        }
+      )
+  }
+
+  actualizarTienda(tienda:any){
+    let parametros = {
+      nombre:tienda.nombre
+    };
+    this._http.put(this._masterUrl.url+"Tienda/"+tienda.id,parametros)
+      .subscribe(
+        (res:Response)=>{
+          tienda.formularioCerrado = !tienda.formularioCerrado;
+          console.log("Respuesta:",res.json());
+        },
+        (err)=>{
+          console.log("Error",err);
+        }
+      )
+  }
 }
